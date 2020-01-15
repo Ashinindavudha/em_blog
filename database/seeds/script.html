@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ES6</title>
+</head>
+<body>
+	<script>
+
+		/*
+		const pi = 3.141;
+		function show() {
+			pi = 3.141;
+		}
+		show();
+		----
+		function show() {
+			if(true) {
+				let value = 10;
+			}
+			console.log(value);
+		}
+		show();
+			----
+		function add(a, b =0) {
+			console.log(a + b);
+		}
+		add(1, 2);
+		----
+		
+		var vals = [345, 678];
+		function add(a, b) {
+			console.log(a + b);
+		}
+		add(...vals);
+		----
+		
+		var name = "Alice";
+		var user = {
+			name,
+			age:22,
+		};
+		console.log(user);
+		----
+		
+		var name = "Alice"
+		console.log(`Hello ${name}`);
+		-----
+		
+
+		var add = (a, b) => {
+			return a + b;
+		}
+		// var add = (a, b) => a + b;
+		console.log( add(2, 3) );
+		
+		var nums = [1, 2, 3, 4, 5];
+		var map = nums.map(i => i * 2);
+		var filter = nums.filter(i => i % 2);
+		console.log(map);
+		console.log(filter);
+		---
+		
+*/
+		class User {
+			info = 'JS Class';
+			constructor(name) {
+				this.name = name;
+			}
+			run() {
+				console.log(this.name + "is running");
+			}
+		}
+
+		class Student extends User {}
+		var user = new User('Mary');
+		user.run();
+		
+	
+
+	</script>
+
+</body>
+</html>
